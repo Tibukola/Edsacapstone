@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+     body {
+    background-image: url("/public/signupimage.jpg");
+    height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+    
+    form{
+        display: grid;
+        gap: 30px;
+    }
+    h1{
+        color: rgba(0, 128, 0, 0.394);
+        height: 50px;
+        width: 50%;
+        margin-left: 500px;
+    }
+    input, select {
+        height: 50px;
+        width: 35%;
+        margin-left: 400px;
+        border-radius: 20px;
+    }
+    button{
+        height: 50px;
+        width: 35%;
+        margin-left: 400px;
+        border-radius: 30px;
+    }
+    .error{
+        color: red;
+    }
+</style>
+    </head>
+    <body>
+        <h1><b>Signup Page</b></h1>
+          <p class="error"><%=error%></p>
+       
+        <form action="/auth/signup"  method="post">
+            <input type="text" name="email" id="email" placeholder="enter your email"/>
+            <input type="text" name="name" id="name" placeholder="enter your name"/>
+       
+            <input type="text" name="Account_type" id="Account_type" placeholder="enter your Account_type"/>
+            <input type="password" name="password" id="password" placeholder="enter password"/>
+
+            <button type="submit">Signup</button>
+        </form>
+    </body>
+</html>

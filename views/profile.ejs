@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body,html {
+        background-image: url("/public/jess-bailey-l3N9Q27zULw-unsplash.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+          
+h1{
+    margin-left: 300px;
+}
+
+.one{
+   
+    color: rgba(255, 0, 0, 0.444);
+    font-weight: bold;
+   
+}
+.two{
+    margin-top: 100px;
+    color: rgba(255, 0, 0, 0.444);
+    font-weight: bold;
+    
+}
+.three{
+    margin-top: 200px;
+    color: rgba(255, 0, 0, 0.444);
+    font-weight: bold;
+   
+}
+        </style>
+    </head>
+    <body>
+        <h1>
+            Profile page
+        </h1>
+        
+       <div class="one"> <p> <b>You are much welcome!</b> <%=user.name  %></p></div>
+       
+       <p>
+        <div class="two"> Will you like to see other persons on this platform? if yes click<a href="/auth/others">here</a> </div> 
+        <div class="three">   You may kindly <a href="/auth/login">exit</a> when you are done.</div>
+       </p>
+        <p>
+           
+        </p>
+
+    </body>
+</html>

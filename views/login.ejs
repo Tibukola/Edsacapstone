@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    body{
+    background-image: url("/public/loginimage.jpg");
+    height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+     .container{
+        margin-top: 170px;
+     }
+    form{
+        display: grid;
+        gap: 30px;
+    }
+    h1{
+        height: 50px;
+        width: 50%;
+        margin-left: 500px;
+    }
+    input{
+        height: 50px;
+        width: 40%;
+        margin-left: 300px;
+        border-radius: 20px;
+    }
+    button{
+        height: 50px;
+        width: 40%;
+        margin-left: 300px;
+        border-radius: 30px;
+    }
+    .error{
+        color: red;
+    }
+</style>
+    </head>
+    <body>
+        <div class="container">
+            
+        <h1><b>Login Page</b></h1>
+        <p class="error"><%=error%></p>
+     
+      <form action="/auth/login"  method="post">
+          <input type="text" name="email" id="email" placeholder="enter your email"/>
+          <input type="password" name="password" id="password" placeholder="enter password"/>
+          <button type="submit">Login</button>
+            
+      </form>
+      <a href="/auth/forgotpwd">Forgot password?</a>
+        </div>
+    </body>
+</html>
